@@ -1,0 +1,23 @@
+.cardclass{
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card{
+    width: 17rem;
+    height: 65vh;
+    flex: 1px;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgb(0,0,0,235)!important;
+
+}
+.cart-text{
+    font-size: 0.9;
+    text-align: left;
+}
+
+

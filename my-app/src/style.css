@@ -1,0 +1,21 @@
+.container1{
+    background-color: rgba(10, 10, 10, 0.685);
+    text-align: center;
+    color: whitesmoke;
+    padding-top:1%;
+    height: 70px;
+}
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
