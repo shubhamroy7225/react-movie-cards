@@ -13,6 +13,7 @@ import React from "react";
                 <p className="card-text text-secondary">
                     {props.description}
                 </p>
+                    
             </div>
         </div>
     )
