@@ -53,8 +53,6 @@ const cropWidth = (rating) => {
 
 const StarRating = (props) => {
     const containerStyle = { width: `${cropWidth(props.rating)}px` };
-    
-
     return (
         <div>
             <div style={styles.starsOuter}>
