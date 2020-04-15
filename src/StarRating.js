@@ -7,7 +7,7 @@
 //     return (
 //     <div>
 //         {[...Array(5)].map((star,i)=>{
-//             const ratingValue = 4.5
+//             const ratingValue = 
 //             return( 
 //             <label>
 //             <input type = "radio" name = "rating" value={ratingValue} onClick = {()=>setRating(ratingValue)}/>
@@ -46,6 +46,7 @@ const styles = {
     star: {
         padding: '1px'
     }
+    
 };
 const cropWidth = (rating) => {
     return Math.floor(rating * width / 5);
@@ -54,7 +55,7 @@ const cropWidth = (rating) => {
 const StarRating = (props) => {
     const containerStyle = { width: `${cropWidth(props.rating)}px` };
     return (
-        <div>
+        <div className = "container2">
             <div style={styles.starsOuter}>
                 <div style={containerStyle}>
                     <div style={styles.starsEmptyInner}>
@@ -64,17 +65,23 @@ const StarRating = (props) => {
                         <FaStar className="fa fa-star-o fa-lg" style={styles.star}/>
                         <FaStar className="fa fa-star-o fa-lg" style={styles.star}/>
                         
+                        
                     </div>
+                    
                     <div style={styles.starsInner}>
                     <FaStar className="fa fa-star fa-lg" style={styles.star}/>
                     <FaStar className="fa fa-star fa-lg" style={styles.star}/>
                     <FaStar className="fa fa-star fa-lg" style={styles.star}/>
                     <FaStar className="fa fa-star fa-lg" style={styles.star}/>
                     <FaStar className="fa fa-star fa-lg" style={styles.star}/>
+                    
                     </div>
+                    
+                    
                 </div>
+                
             </div>
-            <button className="button">{props.rating}</button>
+            
         </div>
     );
 };
